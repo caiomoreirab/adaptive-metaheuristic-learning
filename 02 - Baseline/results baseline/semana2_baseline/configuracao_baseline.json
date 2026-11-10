@@ -1,0 +1,22 @@
+{
+  "populacao": 30,
+  "z": 0.03,
+  "avaliacoes": 3000,
+  "sementes": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "instancias": [
+    "Small/I_2_10_2_1.txt",
+    "Small/I_2_10_2_2.txt",
+    "Small/I_2_10_2_3.txt",
+    "Large/Ta001_2.txt",
+    "Large/Ta041_3.txt"
+  ],
+  "dataset": "/kaggle/input/datasets/caiomoreiraban/dpfsp-dd/DPFSP_DD",
+  "objetivo": "Total Tardiness",
+  "modo": "PFS"
+}
