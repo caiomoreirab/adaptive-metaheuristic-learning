@@ -1,0 +1,46 @@
+{
+  "titulo": "Semana 4 — Treinamento e integração de um modelo surrogate",
+  "formulacao": "Permutation Flow Shop (PFS), Total Tardiness",
+  "instancias": [
+    "Large/Ta001_2.txt",
+    "Large/Ta041_3.txt"
+  ],
+  "configuracao": {
+    "trials": 50,
+    "seeds_optuna": [
+      107,
+      211
+    ],
+    "cfo_optuna": 2000,
+    "samples": {
+      "Large/Ta001_2.txt": 10000,
+      "Large/Ta041_3.txt": 20000
+    },
+    "frac_sma": 0.3,
+    "cfo_coleta": 3000,
+    "max_rodadas_coleta": 25,
+    "epochs": 150,
+    "patience": 18,
+    "batch_size": 256,
+    "cfo_comparacao": 3000,
+    "seeds_comparacao": [
+      401,
+      503,
+      607,
+      709,
+      811
+    ],
+    "frac_selecao": 0.4
+  },
+  "parametros_por_instancia": {
+    "Large/Ta001_2.txt": {
+      "populacao": 60,
+      "z": 0.08802041205965633
+    },
+    "Large/Ta041_3.txt": {
+      "populacao": 20,
+      "z": 0.09907765228083089
+    }
+  },
+  "nota": "Resultados e gráficos derivados da execução deste notebook. Não incluem dados fictícios."
+}
