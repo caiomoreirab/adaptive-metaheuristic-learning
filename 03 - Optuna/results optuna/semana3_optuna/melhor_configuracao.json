@@ -1,0 +1,11 @@
+{
+  "algoritmo": "Slime Mould Algorithm",
+  "metodo_sintonia": "Optuna TPE",
+  "parametros": {
+    "populacao": 20,
+    "z": 0.13411326915217497
+  },
+  "score_sintonia": 2208.6666666666665,
+  "trial_selecionada": 2,
+  "avaliacoes_por_execucao": 3000
+}

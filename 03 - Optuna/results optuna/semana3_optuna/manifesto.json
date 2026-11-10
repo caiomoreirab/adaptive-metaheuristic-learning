@@ -1,0 +1,50 @@
+{
+  "experimento": "Sintonia SMA com Optuna",
+  "configuracao": {
+    "trials": 50,
+    "sementes_sintonia": [
+      107,
+      211,
+      313
+    ],
+    "sementes_teste": [
+      401,
+      503,
+      607,
+      709,
+      811
+    ],
+    "avaliacoes": 3000,
+    "populacoes": [
+      20,
+      25,
+      30,
+      40,
+      50,
+      60
+    ],
+    "intervalo_z": [
+      0.0,
+      0.15
+    ],
+    "mostrar_progresso_trials": true,
+    "log_cada": 1
+  },
+  "instancias_sintonia": [
+    "Small/I_2_10_2_1.txt",
+    "Small/I_2_10_2_2.txt",
+    "Small/I_2_10_2_3.txt"
+  ],
+  "instancias_teste": [
+    "Large/Ta001_2.txt",
+    "Large/Ta011_2.txt",
+    "Large/Ta031_2.txt",
+    "Large/Ta041_2.txt"
+  ],
+  "parametros_otimos": {
+    "populacao": 20,
+    "z": 0.13411326915217497
+  },
+  "melhor_trial": 1,
+  "tempo_sintonia": 166.56109613400008
+}
