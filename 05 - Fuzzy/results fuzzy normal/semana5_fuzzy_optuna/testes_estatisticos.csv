@@ -1,0 +1,5 @@
+instancia,metodo,pares,vitorias_comparado,empates,vitorias_fixo,diferenca_media_fixo_menos_comparado,wilcoxon_p_bilateral,p_holm
+Large/Ta001_2.txt,SMA Fuzzy original,20,13,1,6,69.3,0.1312388454217265,0.262477690843453
+Large/Ta001_2.txt,SMA Fuzzy tunado,20,10,0,10,29.4,0.47490501403808594,0.47490501403808594
+Large/Ta041_3.txt,SMA Fuzzy original,20,8,0,12,-169.0,0.8123550415039062,1.0
+Large/Ta041_3.txt,SMA Fuzzy tunado,20,10,0,10,-77.65,0.8123550415039062,1.0

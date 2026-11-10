@@ -1,0 +1,93 @@
+{
+  "titulo": "Semana 5 — Controle Fuzzy Adaptativo do SMA com Sintonia Optuna",
+  "formulacao": "Permutation Flow Shop, minimização do Total Tardiness",
+  "instancias": [
+    "Large/Ta001_2.txt",
+    "Large/Ta041_3.txt"
+  ],
+  "optuna_semana4": {
+    "Large/Ta001_2.txt": {
+      "populacao": 40,
+      "z": 0.0008499388875837788
+    },
+    "Large/Ta041_3.txt": {
+      "populacao": 50,
+      "z": 0.13428290269269394
+    }
+  },
+  "optuna_fuzzy": {
+    "Large/Ta001_2.txt": {
+      "escala_positiva": 1.1085375402148143,
+      "escala_negativa": 0.6213014503834069,
+      "janela_estagnacao": 5
+    },
+    "Large/Ta041_3.txt": {
+      "escala_positiva": 1.9140941811688401,
+      "escala_negativa": 1.8033719101070624,
+      "janela_estagnacao": 19
+    }
+  },
+  "config": {
+    "avaliacoes": 3000,
+    "sementes": [
+      3109,
+      3203,
+      3301,
+      3407,
+      3511,
+      3607,
+      3701,
+      3803,
+      3907,
+      4001,
+      4103,
+      4201,
+      4307,
+      4409,
+      4507,
+      4603,
+      4703,
+      4801,
+      4903,
+      5003
+    ],
+    "sementes_sintonia": [
+      1103,
+      1207,
+      1301
+    ],
+    "trials_optuna": 50,
+    "avaliacoes_sintonia": 3000,
+    "janela_estagnacao": 12,
+    "intensidade_controle": 1.0,
+    "intervalo_z": [
+      0.0,
+      0.15
+    ]
+  },
+  "entradas": [
+    "diversidade de permutações",
+    "estagnação em gerações"
+  ],
+  "saida": "z_t: probabilidade de reinicialização por geração",
+  "inferência": "Sugeno ordem zero; AND=min; agregação=média ponderada",
+  "base_regras": {
+    "Baixa": {
+      "Baixa": 0.0,
+      "Média": -0.02,
+      "Alta": -0.04
+    },
+    "Média": {
+      "Baixa": 0.03,
+      "Média": 0.0,
+      "Alta": -0.02
+    },
+    "Alta": {
+      "Baixa": 0.065,
+      "Média": 0.04,
+      "Alta": 0.01
+    }
+  },
+  "conjuntos_sintonia_teste_independentes": true,
+  "observacao": "Avaliador exato preservado; surrogate não utilizado na comparação isolada."
+}

@@ -1,0 +1,73 @@
+{
+  "titulo": "Semana 5 — Controle Fuzzy Adaptativo do SMA",
+  "formulacao": "Permutation Flow Shop, minimização do Total Tardiness",
+  "instancias": [
+    "Large/Ta001_2.txt",
+    "Large/Ta041_3.txt"
+  ],
+  "optuna_semana4": {
+    "Large/Ta001_2.txt": {
+      "populacao": 40,
+      "z": 0.0008499388875837788
+    },
+    "Large/Ta041_3.txt": {
+      "populacao": 50,
+      "z": 0.13428290269269394
+    }
+  },
+  "config": {
+    "avaliacoes": 3000,
+    "sementes": [
+      401,
+      503,
+      607,
+      709,
+      811,
+      907,
+      1013,
+      1109,
+      1201,
+      1303,
+      1409,
+      1511,
+      1601,
+      1709,
+      1801,
+      1907,
+      2003,
+      2111,
+      2203,
+      2309
+    ],
+    "janela_estagnacao": 12,
+    "intensidade_controle": 1.0,
+    "intervalo_z": [
+      0.0,
+      0.15
+    ]
+  },
+  "entradas": [
+    "diversidade de permutações",
+    "estagnação em gerações"
+  ],
+  "saida": "z_t: probabilidade de reinicialização por geração",
+  "inferência": "Sugeno ordem zero; AND=min; agregação=média ponderada",
+  "base_regras": {
+    "Baixa": {
+      "Baixa": 0.0,
+      "Média": -0.02,
+      "Alta": -0.04
+    },
+    "Média": {
+      "Baixa": 0.03,
+      "Média": 0.0,
+      "Alta": -0.02
+    },
+    "Alta": {
+      "Baixa": 0.065,
+      "Média": 0.04,
+      "Alta": 0.01
+    }
+  },
+  "observacao": "Avaliador exato preservado; surrogate não utilizado na comparação isolada."
+}

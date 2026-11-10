@@ -1,0 +1,12 @@
+{
+  "Large/Ta001_2.txt": {
+    "escala_positiva": 1.1085375402148143,
+    "escala_negativa": 0.6213014503834069,
+    "janela_estagnacao": 5
+  },
+  "Large/Ta041_3.txt": {
+    "escala_positiva": 1.9140941811688401,
+    "escala_negativa": 1.8033719101070624,
+    "janela_estagnacao": 19
+  }
+}
